@@ -1,9 +1,10 @@
-"use client";
+// import SignInForm from '@/components/SignInForm';
 
-const SignIn = () => {
+export default function SignInPage() {
   return (
-    <div>SignIn</div>
-  )
+    <div>
+      <h1>Sign In</h1>
+      {/* <SignInForm /> */}
+    </div>
+  );
 }
-
-export default SignIn

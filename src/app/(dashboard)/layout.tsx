@@ -75,7 +75,7 @@ export default function DashboardLayout({
           <div>
             <SidebarLink
               link={{
-                label: "Manu Arora",
+                label: "Vighnesh Potdar",
                 href: "#",
                 icon: (
                   <Image

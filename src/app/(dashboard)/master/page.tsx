@@ -1,8 +1,10 @@
 "use client";
 
+
 import MasterUser from "@/components/masterComps/MasterUser";
 
 export default function MasterPage() {
+
   return (
     <div className="p-4 m-4 ">
       <h1 className="text-2xl font-bold text-blue-400">Master Page</h1>
