@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serial Data Monitor</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Serial Data Monitor</h1>
+    <pre id="dataDisplay"></pre>
+    <button id="requestDataBtn">Request Data</button>
+
+    <script>
+        const socket = io();
+
+        document.getElementById('requestDataBtn').addEventListener('click', () => {
+            socket.emit('requestData');
+        });
+
+        socket.on('serialData', (data) => {
+            document.getElementById('dataDisplay').innerText += JSON.stringify(data, null, 2) + "\n";
+        });
+    </script>
+</body>
+</html>
