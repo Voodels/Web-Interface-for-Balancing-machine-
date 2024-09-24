@@ -13,19 +13,19 @@ const features = [
     title: "Advanced Analytics",
     description: "Get insights into your machine's performance",
     icon: "📊",
-    link: "/advanced-analytics",
+    link: "/",
   },
   {
     title: "Real-time Monitoring",
     description: "Track your machine's status in real-time",
     icon: "🔍",
-    link: "/real-time-monitoring",
+    link: "/",
   },
   {
     title: "Custom Reports",
     description: "Generate detailed reports tailored to your needs",
     icon: "📈",
-    link: "/custom-reports",
+    link: "/",
   },
 ]
 
@@ -64,8 +64,11 @@ export default function HomePage() {
       <MeteorEffect />
 
       <div className="text-center mb-12 relative z-10">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 text-blue-600 mt-14">
-          Welcome to BalancePro
+        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 text-blue-600 mt-[150px]">
+          Welcome to 
+          <span className='p-4 m-4 text-9xl text-white drop-shadow-lg'>
+        BalancePro
+          </span>  
         </h1>
         <h2 className="text-3xl sm:text-4xl text-blue-500">
           Advanced Web Interface for Precision Balancing
